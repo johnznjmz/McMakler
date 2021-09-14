@@ -11,7 +11,7 @@ For input:
 "method": "values"
 }
 
-Epected output:
+Expected output:
 
 {
 "result": 5
