@@ -21,3 +21,9 @@ Expected output:
 
 Django==3.2.7
 djangorestframework==3.12.4
+
+## Sreenshots
+
+![values](https://user-images.githubusercontent.com/38066495/133392953-833e542d-4559-4e52-99a6-e361b657a09a.PNG)
+
+![common](https://user-images.githubusercontent.com/38066495/133392968-ec71cf55-33b4-42a1-948f-c8b3cdb0f995.PNG)
