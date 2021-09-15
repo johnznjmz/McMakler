@@ -34,6 +34,9 @@ class McMacklerView(views.APIView):
 
         method_result = [{"result": result}]
 
-        results = McMacklerSerializer(method_result, many=True).data # Serialize method_result list
+        if type(result) == int:
+            results = McMacklerIntSerializer(method_result, many=True).data
+        else:
+            results = McMacklerCharSerializer(method_result, many=True).data
 
         return Response(results)
