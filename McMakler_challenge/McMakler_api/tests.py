@@ -1,3 +1,8 @@
-from django.test import TestCase
+import json
+from rest_framework.test import APITestCase
 
-# Create your tests here.
+'''Test a sample respose'''
+class ResponseTestCase(APITestCase):
+    def test_get_result(self):
+        response = self.client.get('/get-stats/?field=mssubclass&method=common')
+        self.assertEqual(json.loads(response.content), [{'result': 20}])
