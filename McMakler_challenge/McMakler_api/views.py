@@ -12,7 +12,7 @@ class McMacklerView(views.APIView):
 
     def get(self, request):
 
-        field = request.query_params.get('field', None)  # GET column name from pram feild
+        field = request.query_params.get('field', None).lower()  # GET column name from pram feild
         method = request.query_params.get('method', None)  # GET choice of methods (value or common) from pram method
 
         while field:
